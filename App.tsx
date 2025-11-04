@@ -3,6 +3,7 @@
 import React from "react";
 import { View,StyleSheet,Text } from "react-native";
 import { SafeAreaProvider,SafeAreaView } from "react-native-safe-area-context";
+import FooterApp from "./src/components/footer";
 
 //importando conteudo basico do projeto como cores e etc
 import { Cores } from "./src/theme/colors";
@@ -15,6 +16,7 @@ export default function App() {
       <Header />
       <Text style={styles.descricao}>Seja bem-vindo(a) ao MindTracking! um app que te ajuda no controle emocional. Use-o como seu diario pessoal, ou apenas deixe lembretes/ coisas importantes marcadas.</Text>
       <ContainerDiario />
+      <FooterApp />
     </SafeAreaProvider>
   );
 }
@@ -28,6 +30,6 @@ const styles = StyleSheet.create({
     color: Cores.textSecondary,
     textAlign: "center",
     margin: 10,
-    fontSize: 11
+    fontSize: 15
   }
 });

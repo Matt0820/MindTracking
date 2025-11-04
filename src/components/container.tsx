@@ -12,6 +12,7 @@ export default function ContainerDiario() {
         </View>
       </TouchableOpacity>
       <Card />
+      <Card />
     </View>
   );
 }
@@ -20,13 +21,13 @@ const estilos = StyleSheet.create({
   container: {
     backgroundColor: Cores.secondary,
     margin: 15,
-    height: "50%",
+    height: "48%",
     borderRadius: 11,
     alignItems: "center",
   },
   textoBotao: {
     textAlign: "center",
-    color: Cores.textPrimary,
+    color: Cores.secondary,
     fontSize: 20,
     margin: 10,
     fontWeight: "bold",
@@ -35,9 +36,7 @@ const estilos = StyleSheet.create({
     backgroundColor: Cores.primary,
     width: 50,
     height: 50,
-    alignItems: "center",
-    justifyContent: "center",
     margin: 10,
-    borderRadius: 11,
+    borderRadius: 26,
   },
 });
